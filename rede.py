@@ -132,4 +132,10 @@ img_array = np.expand_dims(img_array, axis=0)
 #Fazer previsão
 prediction = model.predict(img_array)
 classe = train_ds.class_names[np.argmax(prediction)]
+
 print(f"Classe prevista: {classe}")
+
+plt.imshow(img)
+plt.axis('off')
+plt.show()
+
