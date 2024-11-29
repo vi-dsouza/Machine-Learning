@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-# Carrega o dataset
+# Carrega o dataset, com base na pasta das imagens do banco
 data_dir = '/content/tomates'
 
 # Verificar se todos os arquivos no diretório são imagens suportadas
@@ -40,8 +40,6 @@ def check_invalid_files(directory):
 
 # Executar a verificação
 check_invalid_files(data_dir)
-
-
 
 # Criar datasets de treino e validação
 train_ds = tf.keras.utils.image_dataset_from_directory(
@@ -62,12 +60,12 @@ val_ds = tf.keras.utils.image_dataset_from_directory(
     batch_size=32,
 )
 
-
 # Salvar os nomes das classes
 class_names = train_ds.class_names
 
 # Normalizar os dados
 normalization_layer = tf.keras.layers.Rescaling(1./255)
+
 train_ds = train_ds.map(lambda x, y: (normalization_layer(x), y))
 val_ds = val_ds.map(lambda x, y: (normalization_layer(x), y))
 
@@ -108,11 +106,10 @@ model.compile(
 )
 
 # Treinar o modelo
-# The validation_data argument should be provided
 history = model.fit(train_ds, validation_data=val_ds, epochs=10)
 print('\n')
-#Avaliar e visualizar o treinamento
 
+#Avaliar e visualizar o treinamento
 import matplotlib.pyplot as plt
 
 #Acuracia
