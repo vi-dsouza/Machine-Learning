@@ -3,7 +3,7 @@ import keras
 from tensorflow.keras.preprocessing import image_dataset_from_directory, image
 import matplotlib.pyplot as plt
 
-# Carrega o dataset
+# Carrega o dataset, com base na pasta que estão as imagens
 data_dir = '/content/sample_data/tomates'
 
 # Criar datasets de treino e validação
@@ -48,7 +48,6 @@ def plot_images(dataset, num_images=9):
 plot_images(train_ds)
 print(class_names)
 
-
 #Melhorar o desempenho durante o treino
 
 train_ds = train_ds.cache().shuffle(1000).prefetch(buffer_size=tf.data.AUTOTUNE)
@@ -90,8 +89,6 @@ history = model.fit(
     epochs=10
 )
 
-
-
 #Avaliar e visualizar o treinamento
 
 import matplotlib.pyplot as plt
@@ -107,7 +104,6 @@ plt.plot(history.history['loss'], label='Perda do treino')
 plt.plot(history.history['val_loss'], label='Perda da validação')
 plt.legend()
 plt.show()
-
 
 # #Salvar e carregar
 
