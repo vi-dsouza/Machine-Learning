@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 
 # Especificar o caminho da imagem diretamente no código
-image_path = "Reducao de dimencionalidade/imagens/animal_de_oculos.jpg"
+image_path = "Reducao de dimensionalidade/imagens/animal_de_oculos.jpg"
 
 # Carrega a imagem
 image = cv2.imread(image_path)
