@@ -30,7 +30,7 @@ MACHINE LEARNING
 
 Depende de uma base de conhecimento.
 
----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Métodos de Machine Learning e suas Aplicações*
 
@@ -44,7 +44,7 @@ INTELIGÊNCIA ARTIFICIAL RESTRITA
 
 *Modelos de Machine Learning para Visão Computacional*
 
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 MÉTODOS DE MACHINE LEARNING BIOINSPIRADOS
 
@@ -66,7 +66,7 @@ Heurísticos = Depende de vários fatores.
 
 Redes Neurais Artificiais(RNA) = Inspirada em neurônios.
 
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 REDES NEURAIS ARTIFICIAIS
 
@@ -83,7 +83,7 @@ Uma imagem é enviada por meio de uma rede neural através de uma matriz.
 
 *Classificação: Execução de uma rede neural artificial*
 
--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ALGORITMOS GENÉRICOS
 
@@ -108,7 +108,7 @@ Passo 3 - Seleção do melhores indivíduos iniciais.
 
 *Implementação de algoritmos genéticos*
 
--------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 MAQUINAS DE VETORES DE SUPORTE
 
@@ -125,12 +125,12 @@ SVM é robusto para outliers.
 
 SVM x Redes Neurais
 
--------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Datasets: como usar e gerar uma base de dados
 
 
--------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 Links Úteis 
 
 Separamos aqui alguns materiais complementares como artigos, apostilas, apresentações, entre outros. Esses materiais serão úteis para você se aprofundar ainda mais nos principais temas deste Módulo, listados a seguir:
@@ -151,7 +151,7 @@ Redes Neurais Artificiais:
 
 https://www.inf.ufsc.br/~j.barreto/tutoriais/Survey.pdf 
 
-------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PARTE 2 - LINGUAGENS DE PROGRAMAÇÃO PARA MACHINE LEARNING
 
@@ -270,7 +270,7 @@ while (condicao)
 
 Processamento de imagens
 
---------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 INTRODUÇÃO PARA LINGUAGEN R
 
@@ -324,7 +324,7 @@ nlme: modelos lineares e não lineares de efeitos mistos.
 *Começando a programar com R*
 
 Linguagem interpretada.
-----------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 *Framework para machine learning*
 
 -TensorFlow
@@ -342,11 +342,11 @@ Linguagem interpretada.
 
 -Matplotlib
 
-------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 INTRODUÇÃO AO COLAB
 
 *Transfer Learning*
--------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 MATERIAIS DE APOIO
  
@@ -381,7 +381,7 @@ https://petmecanica.ufes.br/sites/petengenhariamecanica.ufes.br/files/field/anex
 
 https://cepein.femanet.com.br/BDigital/arqTccs/1511420380.pdf 
 
------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 TREINAMENTO NÃO SUPERVISIONADO
 
@@ -405,10 +405,185 @@ O aprendizado não supervisionado pode identificar recursos que podem ser uteis 
 2- preciso definir aleatoriamente um centroide para cada cluster.
 3- o próximo passo e calcular para cada ponto, o centroide de menor distancia.
 
------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 APRENDIZADO POR REFORÇO
 
 Pode ser entendido através de seus componentes: agente, ambiente, estados, ações, e recompensas.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+EXTRAÇÃO DE FEATURES
+
+Importante para representar um objeto, definir o que é importante.
+
+Redução de Dimensionalidade
+
+Tomar cuidado para não eliminar informações importantes, mas as informações desnecessárias podem ser eliminadas.
+
+-Processar imagens para evidenciar regiões de interesse.
+-Detectar objetos por meio de suas formas e cores.
+-Classificar objetos por meio de uma base de conhecimento.
+
+*Redução de dimensão no espaço de cor*
+
+Espera-se usar o número de tons de cinza, preservando o máximo possível, o contraste da imagem original. Inevitavelmente há perdas de informação de cor.
+
+PROJETO PARA REDUÇÃO DE DIMENSIONALIDADE EM IMAGENS
+
+Seguindo o exemplo do algoritmo de binarização apresentado em nossa ultima aula, realize a implementação em python para transformar uma imagem colorida para níveis de cinza (0 a 255) e para binarizada (0 a 255), preto e branco.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Materiais de Apoio
+ 
+Slides
+A apresentação completa utilizada neste módulo está disponível AQUI
+Com isso, você terá acesso a todos os slides e links explorados durante as aulas.
+
+Links Úteis 
+Separamos aqui alguns materiais complementares como artigos, apostilas, apresentações, entre outros. Esses materiais serão úteis para você se aprofundar ainda mais nos principais temas deste Módulo, listados a seguir:
+
+Treinamento supervisionado
+
+https://stanford.edu/~shervine/l/pt/teaching/cs-229/dicas-aprendizado-supervisionado 
+
+https://fontana.paginas.ufsc.br/files/2018/03/apostila_ML_pt2.pdf 
+
+https://repositorio.ufu.br/bitstream/123456789/14284/1/t.pdf 
+
+Treinamento não supervisionado
+
+https://stanford.edu/~shervine/l/pt/teaching/cs-229/dicas-aprendizado-nao-supervisionado 
+
+https://www.researchgate.net/publication/255642929_Aprendizado_nao-supervisionado_em_redes_neurais_pulsadas_de_base_radial_um_estudo_da_capacidade_de_agrupamento_para_a_classificacao_de_pixels 
+
+http://www2.ic.uff.br/~kdmile/MachineLearning_Andre.pdf 
+
+Aprendizado por reforço
+
+https://www.dca.fee.unicamp.br/~vonzuben/courses/ia353_1s20/topico8_P8_IA353_1s2020.pdf 
+
+https://repositorio.ipl.pt/bitstream/10400.21/6799/1/Disserta%C3%A7%C3%A3o.pdf 
+
+https://pantheon.ufrj.br/bitstream/11422/14791/1/TCGMontalvao.pdf7 
+
+Algoritmos de regressão
+
+https://www.creasp.org.br/arquivos/revista/revista1_artigo6_-_Implementacao.pdf 
+
+https://web.icmc.usp.br/SCATUSU/RT/BIBLIOTECA_113_RT_197.pdf 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+INTRODUÇÃO AOS METODOS DE VALIDAÇÃO.
+
+Porque avaliar um modelo?
+
+A validação de um modelo de ML tras a possibilidade de avaliar seu funcionamento perante o problema a ser tratado.
+
+Problemas de Validação
+
+Undersfitting
+
+Sub-ajustado, nosso modelo não conseguiu aprender suficiente sobre os dados. Leva a um erro elevado nos dados de treino quando nos dados de teste.
+
+Balanced 
+
+Dados desbalanceados podem ser definidos pela pequena incidência de uma categoria dentro de um dataset (classe minoritaria) em comparação com as demais categorias (classes majoritarias).
+
+Overfiting
+
+Quando um modelo estatístico se ajusta muito bem ao conjunto de dados anteriores observado, mas se mostra ineficaz para prever novos resultados.
+
+*Métodos de otimização para hiperparâmetros*
+
+ 
+Parâmetros - são ajustados diretamente por meio do processo de aprendizado e influenciam diretamente na performance do algoritmo.
+
+Hiperparametros são variáveis do algoritmo definidas antes do treinamento.
+
+- Metrica de performance de uma regressão
+- Numero de neurônios de uma rna (ou camadas), o números de vizinhos.
+
+Bayes Search
+
+Busca bayesiana tenta estimar qual e a combinação de hiperparametros que resultara na maior performace, com base numa distribuição criada a partir das combinações.
+
+*Ajustes de hiperparametros na pratica*
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+METRICAS DE AVALIAÇÃO DE DESEMPENHO
+
+O que e métricas de avaliação?
+
+São medidas quantificáveis usadas para avaliar o resultado de um processo, ação ou estratégia especifica. De maneira geral, são medidas de desempenho.
+
+VP - verdadeiro positivo
+VN - verdadeiro negativo
+FP - falso positivo
+FN - falso negativo
+
+Matriz de confusão - conjuntos de valores positivos e negativos.
+
+Tipos de métricas
+
+Acurácia: é considerada uma das métricas mais simples e importantes. Ela avalia simplesmente o percentual de acertos, ou seja, ela pode ser obtida por meio da razão ente a quantidade de acertos e o total de entradas.
+
+acurácia = total de acertos / total de itens
+acuraria = VP + VN / VP + FN + VN + FP
+
+Sensibilidade: essa métrica avalia a capacidade do método de detectar com sucesso resultados classificados como positivos. Ela pode ser obtida pela equação:
+
+sensibilidade = VP / VN + FN
+
+Especificidade: avalia a capacidade do método de detectar resultados negativos. Podemos calcular usando a equação:
+
+especificidade = VN / VN + FP
+
+
+Precisão: é uma métrica que avalia a quantidade de verdadeiros positivos sobre a soma de todos os valores positivos.
+
+precisao = VP / VP + FP
+
+
+F-score: é uma medida harmônica calculada com base na precisao e na renovação. Ela pode ser obtida com base na equação:
+
+f1 = 2 * precisao * sensibilidade
+	--------------------------
+	precisao + sensibilidade
+
+Curva Roc
+
+É um gráfico que permite avaliar um classificador binário. Levando em consideração a taxa de verdadeiro positivo e a taxa de falsos positivos.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Métodos de Validação  
+
+https://www.teses.usp.br/teses/disponiveis/95/95131/tde-19052018-122805/publico/CostaSaClebiano2018.pdf 
+
+http://www.rizbicki.ufscar.br/sml.pdf 
+
+Métodos de otimização 
+
+https://www.maxwell.vrac.puc-rio.br/8242/8242_4.PDF 
+
+https://www.ime.unicamp.br/~mac/db/2019-2S-157490.pdf 
+
+https://www.cin.ufpe.br/~tg/2019-2/TG_EC/ArturFranco_Monografia_TG.pdf 
+
+Otimização em hiperparâmetros  
+
+https://carlos-henreis.github.io/files/Monografia_TFG.pdf 
+
+https://www.dca.fee.unicamp.br/~vonzuben/courses/ia353_1s21/topico8_P9_IA353_1s2021.pdf 
+
+Métricas de Avaliação de Desempenho  
+
+https://www.maxwell.vrac.puc-rio.br/4296/4296_4.PDF 
+
+https://www.cin.ufpe.br/~tg/2017-1/vgom_tg.pdf 
+
+https://bioinfo.com.br/wp-content/uploads/2021/07/15_Metricas-de-avaliacao-em-machine-learning_-acuracia-sensibilidade-precisao-especificidade-e-F-score-_-BIOINFO.pdf 
