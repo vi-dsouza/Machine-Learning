@@ -18,8 +18,8 @@ x = base_model.output
 x = GlobalAveragePooling2D()(x)
 x = Dense(1024, activation='relu')(x)
 
-# Ajuste para 2 classes, já que seu conjunto de dados tem 2 classes
-predictions = Dense(4, activation='softmax')(x)  # Ajustado para 2 classes
+# 4 classes
+predictions = Dense(4, activation='softmax')(x)  
 
 # Criar o modelo final
 model = Model(inputs=base_model.input, outputs=predictions)
